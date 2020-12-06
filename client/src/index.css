@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "avant-garde-bold";
+  src: local("avant-garde-bold"),
+    url(./assets/fonts/avant-garde-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "avant-garde-medium";
+  src: local("avant-garde-medium"),
+    url(./assets/fonts/avant-garde-medium.ttf) format("truetype");
+}
+
+body {
+  font-family: "avant-garde-bold", sans-serif;
+  color: #333;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

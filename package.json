@@ -1,0 +1,27 @@
+{
+  "name": "tink",
+  "workspaces": ["server", "client"],
+  "version": "0.1.0",
+  "engines": {
+    "node": "12.x"
+  },
+  "private": true,
+  "scripts": {
+    "fe:dev": "yarn workspace client start:dev",
+    "be:dev": "yarn workspace server start:dev",
+    "build": "yarn workspace client build && yarn workspace server build",
+    "start": "yarn build && yarn workspace server start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
